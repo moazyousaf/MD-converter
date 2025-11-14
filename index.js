@@ -13,6 +13,11 @@ import { convertMarkdown } from './src/converter.js';
 const inputFile = process.argv[2];
 const outputFile = process.argv[3];
 
+if (inputFile === undefined || outputFile === undefined) {
+  console.error('Usage: convert <inputfile.md> <outputfile.html>');
+  process.exit(1);
+}
+
 // Se inputFile o outputFile sono undefined, questo codice andrà in crash
 console.log(`Converting ${inputFile} to ${outputFile}...`);
 
