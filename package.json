@@ -1,0 +1,22 @@
+{
+  "name": "md-converter",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "MD-converter": "./index.js"
+  },
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "marked": "^4.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+}
