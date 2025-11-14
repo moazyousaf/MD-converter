@@ -1,0 +1,22 @@
+name: Node.js CI
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Scarica il codice dal repository
+      - name: Checkout codice
+        uses: actions/checkout@v3
+
+      # 2. Configura Node.js
+      - name: Use node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+      - run: npm install
+      - name: Run tests
+        run: npm run test
