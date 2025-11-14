@@ -1,11 +1,12 @@
 {
   "name": "md-converter",
   "version": "0.1.0",
-  "description": "",
+  "description": "a simple text converter from MD to HTML",
   "main": "index.js",
   "bin": {
-    "MD-converter": "./index.js"
+    "convert": "./index.js"
   },
+  "type": "module",
   "scripts": {
     "test": "jest",
     "start": "node index.js"
